@@ -33,4 +33,6 @@ loginBtn.addEventListener("click", function () {
   } else {
     alert(`${userMail} your access has been denied`);
   }
+
+  mailFound = false;
 });
