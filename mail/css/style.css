@@ -52,3 +52,10 @@ main {
   font-size: 1rem;
   width: max-content;
 }
+
+.green {
+  color: green;
+}
+.red {
+  color: red;
+}
