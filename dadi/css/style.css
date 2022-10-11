@@ -12,20 +12,20 @@ main {
   background-color: black;
   height: 100vh;
   position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  align-items: center;
+  justify-content: space-evenly;
 }
 h1 {
   color: white;
   text-align: center;
-  padding-top: 2em;
   font-size: 4rem;
 }
 .container {
   width: 80%;
   margin: 0 auto;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
   background-color: white;
   display: flex;
   justify-content: space-between;
@@ -53,10 +53,6 @@ h1 {
   background-color: white;
   height: 40px;
   border-radius: 20px;
-  position: absolute;
-  top: 80%;
-  left: 50%;
-  transform: translate(-50%, -80%);
   padding: 1em;
   display: flex;
   align-items: center;
