@@ -31,6 +31,7 @@ h1 {
   justify-content: space-between;
   padding: 2em 1em;
   border-radius: 20px;
+  position: relative;
 }
 
 .player {
@@ -43,10 +44,33 @@ h1 {
   background-color: black;
   padding: 1em;
   border-radius: 20px;
+  transition: 500ms;
+}
+
+#play:active + .player {
+  transform: rotate(-360deg);
+}
+
+#play:active ~ .player:last-child {
+  transform: rotate(360deg);
 }
 
 .player span {
   font-size: 3rem;
+}
+
+#play {
+  font-size: 1rem;
+  align-self: center;
+  width: 5em;
+  padding: 0.5em 1em;
+  border-radius: 20px;
+  background-color: black;
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 #winner {
